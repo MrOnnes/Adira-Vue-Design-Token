@@ -9,15 +9,15 @@
     :class="`alert-${variant}`"
   >
     <button
-      v-if="dismissable"
-      @click="closeAlert"
+      v-if="dismissible"
       type="button"
       aria-label="Close"
       class="close"
+      @click="closeAlert"
     >
       ×
     </button>
-    <slot></slot>
+    <slot />
   </div>
 </template>
 <script>
@@ -36,7 +36,7 @@ export default {
       type: String,
       default: "close",
     },
-    dismissable: {
+    dismissible: {
       type: Boolean,
       default: false,
     },

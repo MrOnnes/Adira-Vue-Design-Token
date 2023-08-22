@@ -11,7 +11,7 @@
     <slot></slot>
     <p>{{ otherProp }}</p>
     <button
-      v-if="dismissable"
+      v-if="dismissible"
       @click="closeAlert"
       type="button"
       aria-label="Close"
@@ -37,7 +37,7 @@ export default {
       type: String,
       default: "close",
     },
-    dismissable: {
+    dismissible: {
       type: Boolean,
       default: false,
     },

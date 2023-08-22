@@ -260,12 +260,47 @@ export default {
   font-weight: 600;
   line-height: 2rem;
   margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .sticky-header {
   position: sticky;
   top: 0;
   background: white;
+}
+.ad-example {
+  padding: 1.5rem;
+
+  border-width: 0.2rem;
+  border: solid 2 #fafafa;
+  /* border: solid #f8f9fa; */
+
+  margin: 1rem 0 0 0;
+}
+.alert-heading {
+}
+hr {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem !important;
+}
+
+#main-content > p {
+  max-width: 80%;
 }
 </style>
