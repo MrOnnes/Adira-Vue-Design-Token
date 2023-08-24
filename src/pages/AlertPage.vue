@@ -41,6 +41,7 @@
         </div>
         <div class="ad-code">
           <pre v-pre class="hljs"><code class="html">
+            random text testing
       &lt;template&gt;
         &lt;ad-alert show&gt;Default Alert&lt;/ad-alert&gt;
         &lt;ad-alert show variant="success"&gt;Success Alert&lt;/ad-alert&gt;
