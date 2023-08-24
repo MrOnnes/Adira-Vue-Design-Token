@@ -19,8 +19,9 @@
             <router-link
               :to="{ path: '/' + menuItem }"
               class="block py-2 px-3 text-gray-900 hover:text-yellow-700"
-              >{{ menuItem }}</router-link
             >
+              {{ menuItem }}
+            </router-link>
           </li>
         </ul>
       </div>

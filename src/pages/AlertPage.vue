@@ -3,8 +3,8 @@
     <main-content>
       <div class="pb-4 mb-8 border-b border-gray-200">
         <h1
-          class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
           id="content"
+          class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
           Alert
         </h1>
@@ -23,11 +23,15 @@
         </p>
         <div class="ad-example">
           <div>
-            <ad-alert show>Default Alert</ad-alert>
+            <ad-alert show> Default Alert </ad-alert>
             <ad-alert show variant="success">Success Alert</ad-alert>
-            <ad-alert v-model="showDismissibleAlert" variant="error" dismissible
-              >Dismissable Alert!</ad-alert
+            <ad-alert
+              v-model="showDismissibleAlert"
+              variant="error"
+              dismissible
             >
+              Dismissable Alert!
+            </ad-alert>
             <button @click="showDismissibleAlert = true">
               Show Dismissable Alert ({{
                 showDismissibleAlert ? "visible" : "hidden"
@@ -139,10 +143,10 @@
         </p>
         <div class="ad-example">
           <div>
-            <ad-alert show dismissible
-              >Dismissible Alert! Click the close button over there
-              <b>&rArr;</b></ad-alert
-            >
+            <ad-alert show dismissible>
+              Dismissible Alert! Click the close button over there
+              <b>&rArr;</b>
+            </ad-alert>
           </div>
         </div>
         <div class="ad-code">
@@ -232,9 +236,6 @@ export default {
     // CustomAlert,
     // PropGanda,
   },
-  mounted() {
-    hljs.highlightAll();
-  },
   data() {
     return {
       showDismissibleAlert: false,
@@ -268,6 +269,9 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    hljs.highlightAll();
   },
   methods: {
     showAlert() {

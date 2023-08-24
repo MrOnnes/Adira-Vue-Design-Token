@@ -1,13 +1,13 @@
 <template>
   <input
+    :id="fieldId"
     class="form-control"
     :class="validate"
     :type="type"
     :placeholder="placeholder"
-    :id="fieldId"
     :value="value"
-    @input="updateValue"
     :disabled="disabled"
+    @input="updateValue"
   />
 </template>
 
@@ -21,6 +21,7 @@ export default {
     },
     form: {
       type: String,
+      default: "",
     },
     type: {
       type: String,
@@ -36,6 +37,7 @@ export default {
     },
     value: {
       type: String,
+      default: "",
     },
     onError: {
       type: Boolean,

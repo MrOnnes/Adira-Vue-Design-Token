@@ -21,8 +21,8 @@
                   :to="{ path: '/' + formatMenuItem(menuItem) }"
                   class="py-2 text-gray-500 font-medium items-center flex-wrap flex relative"
                 >
-                  {{ menuItem }}</router-link
-                >
+                  {{ menuItem }}
+                </router-link>
                 <!-- <a
                   href="#"
                   class="py-2 text-gray-500 font-medium items-center flex-wrap flex relative"

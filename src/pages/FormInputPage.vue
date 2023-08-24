@@ -3,8 +3,8 @@
     <main-content>
       <div class="pb-4 mb-8 border-b border-gray-200">
         <h1
-          class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
           id="content"
+          class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
         >
           Form Input
         </h1>
@@ -22,7 +22,9 @@
           elit ac ligula. Ut ut purus vitae augue vehicula pellentesque. In
           tellus urna, rutrum vitae consequat nec, lobortis at elit.
         </p>
+        <br />
         <h2 class="">Default form</h2>
+        <br />
         <p>
           This is an example of a form component including an email, password,
           checkbox, and submit button that you can use as a starting point for
@@ -86,7 +88,7 @@
             <div style="flex: 0 0 25%; max-width: 25%; align-self: center">
               <label>{{ validation.label }}</label>
             </div>
-            <div style="flex: 0 0 75%; max-width: 75%" :key="validation">
+            <div :key="validation" style="flex: 0 0 75%; max-width: 75%">
               <ad-form-input
                 :id="validation.id"
                 :state="validation.state"

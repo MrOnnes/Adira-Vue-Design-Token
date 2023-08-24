@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  props: {
-    code: String, // Properti yang menerima kode yang akan ditampilkan
-  },
+  // props: {
+  //   code: String, // Properti yang menerima kode yang akan ditampilkan
+  // },
 };
 </script>
 
