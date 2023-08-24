@@ -277,7 +277,10 @@ export default {
 
   margin: 1rem 0 0 0;
 }
-.alert-heading {
+/* .alert-heading {
+} */
+.ad-code {
+  position: relative;
 }
 hr {
   margin-top: 1rem !important;

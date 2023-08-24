@@ -1,15 +1,15 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./style.css";
-import "prismjs/themes/prism.css";
+// import "prismjs/themes/prism.css";
 import VueRouter from "vue-router";
 import Prism from "prismjs";
-import hljs from "highlight.js/lib/core";
-import javascript from "highlight.js/lib/languages/javascript";
+// import hljs from "highlight.js/lib/core";
+// import javascript from "highlight.js/lib/languages/javascript";
 import vuePlugin from "@highlightjs/vue-plugin";
 import AdiraDesignSystem from ".";
 
-hljs.registerLanguage("javascript", javascript);
+// hljs.registerLanguage("javascript", javascript);
 
 Vue.use(vuePlugin);
 Vue.use(AdiraDesignSystem);

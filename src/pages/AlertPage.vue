@@ -39,22 +39,25 @@
             </button>
           </div>
         </div>
-        <div class="ad-code">
-          <pre v-pre class="hljs"><code class="html">
-      &lt;template&gt;
-        &lt;ad-alert show&gt;Default Alert&lt;/ad-alert&gt;
-        &lt;ad-alert show variant="success"&gt;Success Alert&lt;/ad-alert&gt;
-        &lt;ad-alert v-model="showDismissibleAlert" variant="error" dismissible&gt;
-          Dismissable Alert!
-        &lt;/ad-alert&gt;
-        &lt;button @click="showDismissibleAlert = true"&gt;
-          Show Dismissable Alert (
-          {{ showDismissibleAlert ? 'visible' : 'hidden' }})
-        &lt;/button&gt;
-      &lt;/template&gt;
-    </code></pre>
-        </div>
+        <div class="">
+          <pre v-pre class="hljs">
+        <code class="html">
+    &#x3C;template&#x3E;
+      &#x3C;ad-alert show&#x3E;Default Alert&#x3C;/ad-alert&#x3E;
+      &#x3C;ad-alert show variant=&#x22;success&#x22;&#x3E;Success Alert&#x3C;/ad-alert&#x3E;
+      &#x3C;ad-alert v-model=&#x22;showDismissibleAlert&#x22; variant=&#x22;error&#x22; dismissible&#x3E;
+        Dismissable Alert!
+      &#x3C;/ad-alert&#x3E;
+      &#x3C;button @click=&#x22;showDismissibleAlert = true&#x22;&#x3E;
 
+        Show Dismissable Alert (&#123;&#123; showDismissibleAlert ? 'visible' : 'hidden' &#125;&#125;)
+
+      
+      &#x3C;/button&#x3E;
+    &#x3C;/template&#x3E;
+        </code>
+    </pre>
+        </div>
         <br />
         <h2>Visible State</h2>
         <p>
@@ -86,7 +89,7 @@
             <ad-alert variant="error" show>Error Alert</ad-alert>
           </div>
         </div>
-        <div class="ad-code">
+        <div class=" ">
           <pre v-pre class="hljs"><code class="html">
             &#x3C;ad-alert variant=&#x22;info&#x22; show&#x3E;Info Alert&#x3C;/ad-alert&#x3E;
             &#x3C;ad-alert variant=&#x22;success&#x22; show&#x3E;Success Alert&#x3C;/ad-alert&#x3E;
@@ -117,7 +120,7 @@
             </ad-alert>
           </div>
         </div>
-        <div class="ad-code">
+        <div class=" ">
           <pre v-pre class="hljs"><code class="html">
             &#x3C;ad-alert variant=&#x22;info&#x22; show&#x3E;
               &#x3C;h4 class=&#x22;alert-heading&#x22;&#x3E;Well done!&#x3C;/h4&#x3E;
@@ -149,7 +152,7 @@
             </ad-alert>
           </div>
         </div>
-        <div class="ad-code">
+        <div class=" ">
           <pre v-pre class="hljs"><code class="html">
             &#x3C;ad-alert show dismissible
               &#x3E;Dismissible Alert! Click the close button over there
@@ -220,12 +223,8 @@
 <script>
 import AdAlert from "@/components/AdAlert.vue";
 import MainContent from "@/components/MainContent.vue";
-// import CodeBlock from "@/components/CodeBlock.vue";
-// import CustomAlert from "./CustomAlert.vue";
-// import PropGanda from "./PropGanda.vue";
 import hljs from "highlight.js";
-import "highlight.js/styles/stackoverflow-light.css";
-// import "highlight.js/styles/default.css";
+import "highlight.js/styles/github-dark-dimmed.css";
 
 export default {
   components: {
