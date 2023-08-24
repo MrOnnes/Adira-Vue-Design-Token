@@ -49,7 +49,7 @@ export default {
         },
         {
           name: "Category 2",
-          menuItems: ["Alert", "Form Input", "Menu 2.2"],
+          menuItems: ["Alert", "Form Input", "Test Page"],
         },
       ],
     };

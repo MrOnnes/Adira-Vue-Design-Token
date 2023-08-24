@@ -22,6 +22,7 @@ import Home from "./pages/HomePage.vue";
 import About from "./pages/AboutPage.vue";
 import FormInputPage from "./pages/FormInputPage.vue";
 import AlertPageVue from "./pages/AlertPage.vue";
+import TestPageVue from "./pages/TestPage.vue";
 // import Menu1_1 from "./components/Menu1_1.vue";
 // import Menu1_2 from "./components/Menu1_2.vue";
 // import Menu2_1 from "./components/Menu2_1.vue";
@@ -32,6 +33,7 @@ const routes = [
   { path: "/about", component: About },
   { path: "/form-input", component: FormInputPage },
   { path: "/alert", component: AlertPageVue },
+  { path: "/test-page", component: TestPageVue },
 
   // { path: "/menu1.1", component: Menu1_1 },
   // { path: "/menu1.2", component: Menu1_2 },
