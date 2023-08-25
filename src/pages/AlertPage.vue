@@ -154,10 +154,10 @@
         </div>
         <div class=" ">
           <pre v-pre class="hljs"><code class="html">
-            &#x3C;ad-alert show dismissible
-              &#x3E;Dismissible Alert! Click the close button over there
-              &#x3C;b&#x3E;&#x26;rArr;&#x3C;/b&#x3E;&#x3C;/ad-alert
-            &#x3E;
+            &#x3C;ad-alert show dismissible&#x3E;
+              Dismissible Alert! Click the close button over there
+              &#x3C;b&#x3E;&#x26;rArr;&#x3C;/b&#x3E;
+              &#x3C;/ad-alert&#x3E;
             </code></pre>
         </div>
         <br />
