@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/adira-design-system.svg)](https://badge.fury.io/js/adira-design-system)
+
 # MIT License
 
 Copyright (c) 2023
