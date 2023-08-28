@@ -160,6 +160,66 @@
               &#x3C;/ad-alert&#x3E;
             </code></pre>
         </div>
+        <h2>Auto dismissing alerts</h2>
+        <p>
+          Using the dismissible prop it's possible to dismiss any
+          &#x3C;ad-alert&#x3E; inline. This will add a close X button. Use the
+          dismiss-label prop to change the hidden label text associated with the
+          dismiss button. To create a &#x3C;ad-alert&#x3E; that dismisses
+          automatically after a period of time, set the show prop (or the
+          v-model) to the number of seconds you would like the
+          &#x3C;ad-alert&#x3E; to remain visible for. Only integer number of
+          seconds are supported.
+        </p>
+        <div class="ad-example">
+          <div>
+            <ad-alert
+              :show="dismissCountDown"
+              dismissible
+              variant="warning"
+              @dismissed="dismissCountDown = 0"
+              @dismiss-count-down="countDownChanged"
+            >
+              This alert will dismiss after {{ dismissCountDown }} seconds...
+            </ad-alert>
+            <br />
+            <button variant="info" class="m-1" @click="showAutoDismissingAlert">
+              Show alert with count-down timer
+            </button>
+          </div>
+        </div>
+        <div class=" ">
+          <pre v-pre class="hljs"><code class="html">
+        &lt;template&gt;
+          &lt;ad-alert
+            :show=&quot;dismissCountDown&quot;
+            dismissible
+            variant=&quot;warning&quot;
+            @dismissed=&quot;dismissCountDown = 0&quot;
+            @dismiss-count-down=&quot;countDownChanged&quot; &gt;
+            This alert will dismiss after {{ dismissCountDown }} seconds...
+          &lt;/ad-alert&gt;
+        &lt;/template&gt;
+        &lt;script&gt;
+        export default {
+          data() {
+            return {
+              dismissSecs: 5,
+              dismissCountDown: 0,
+            };
+          },
+          methods: {
+            countDownChanged(dismissCountDown) {
+              this.dismissCountDown = dismissCountDown;
+            },
+            showAlert() {
+              this.dismissCountDown = this.dismissSecs;
+            },
+          },
+        };
+        &lt;/script&gt;
+            </code></pre>
+        </div>
         <br />
         <h2>Properties</h2>
         <p>Lorem Ipsum</p>
@@ -198,26 +258,6 @@
         <br />
       </div>
     </main-content>
-    <!-- <ad-alert show>this is not dismissible</ad-alert>
-    <ad-alert variant="warning" v-model="showDismissibleAlert" dismissible=""
-      >this is dismissible alert</ad-alert
-    >
-    <button @click="showDismissibleAlert = true">
-      show dismissible alert ({{ showDismissibleAlert ? "visible" : "hidden" }})
-    </button>
-    <ad-alert variant="success" show>
-      <h4 class="alert-heading">Well done!</h4>
-      <p>
-        Aww yeah, you successfully read this important alert message. This
-        example text is going to run a bit longer so that you can see how
-        spacing within an alert works with this kind of content.
-      </p>
-      <hr />
-      <p class="mb-0">
-        Whenever you need to, be sure to use margin utilities to keep things
-        nice and tidy.
-      </p>
-    </ad-alert> -->
   </div>
 </template>
 <script>
@@ -230,12 +270,11 @@ export default {
   components: {
     MainContent,
     AdAlert,
-    // CodeBlock,
-    // CustomAlert,
-    // PropGanda,
   },
   data() {
     return {
+      dismissSecs: 5,
+      dismissCountDown: 0,
       showDismissibleAlert: false,
       showkah: false,
       htmlContent: `
@@ -275,6 +314,12 @@ export default {
     showAlert() {
       this.showDismissibleAlert = true;
       console.log("showAlert");
+    },
+    countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAutoDismissingAlert() {
+      this.dismissCountDown = this.dismissSecs;
     },
     toggleAlert() {
       this.showDismissibleAlert = !this.showDismissibleAlert;
