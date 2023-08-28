@@ -2,7 +2,7 @@
   <div>
     Test Page
     <br />
-    <!-- <ad-alert
+    <ad-alert
       :show="dismissCountDown"
       dismissible
       variant="warning"
@@ -13,7 +13,7 @@
     </ad-alert>
     <button @click="showAlert" variant="info" class="m-1">
       Show alert with count-down timer
-    </button> -->
+    </button>
     <br />
     <!-- <ad-alert show>Default Alert</ad-alert> -->
     <!-- <ad-alert show variant="success">Success Alert</ad-alert> -->
