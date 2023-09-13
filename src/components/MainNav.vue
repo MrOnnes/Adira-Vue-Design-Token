@@ -38,4 +38,10 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+dl,
+ol,
+ul {
+  list-style-type: none;
+}
+</style>

@@ -18,12 +18,12 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "highlight.js": "^11.8.0",
-    "prismjs": "^1.29.0",
     "vue": "^2.7.14",
     "vue-router": "^2.8.1"
   },
   "devDependencies": {
+    "prismjs": "^1.29.0",
+    "highlight.js": "^11.8.0",
     "@highlightjs/vue-plugin": "^2.1.0",
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",

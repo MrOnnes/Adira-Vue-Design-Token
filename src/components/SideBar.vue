@@ -49,7 +49,14 @@ export default {
         },
         {
           name: "Category 2",
-          menuItems: ["Alert", "Form Input", "Test Page"],
+          menuItems: [
+            "Alert",
+            "Breadcrumb",
+            "Button",
+            "Form Input",
+            "Link",
+            "Test Page",
+          ],
         },
       ],
     };
@@ -61,3 +68,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+dl,
+ol,
+ul {
+  list-style-type: none;
+}
+</style>

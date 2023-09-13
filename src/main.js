@@ -1,19 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./style.css";
-// import "prismjs/themes/prism.css";
 import VueRouter from "vue-router";
 import Prism from "prismjs";
-// import hljs from "highlight.js/lib/core";
-// import javascript from "highlight.js/lib/languages/javascript";
 import vuePlugin from "@highlightjs/vue-plugin";
 import AdiraDesignSystem from ".";
 
-// hljs.registerLanguage("javascript", javascript);
-
 Vue.use(vuePlugin);
 Vue.use(AdiraDesignSystem);
-
 Vue.use(VueRouter);
 Prism.highlightAll();
 
@@ -23,6 +17,9 @@ import About from "./pages/AboutPage.vue";
 import FormInputPage from "./pages/FormInputPage.vue";
 import AlertPageVue from "./pages/AlertPage.vue";
 import TestPageVue from "./pages/TestPage.vue";
+import BreadCrumbPageVue from "./pages/BreadcrumbPage.vue";
+import ButtonPageVue from "./pages/ButtonPage.vue";
+import LinkPageVue from "./pages/LinkPage.vue";
 // import Menu1_1 from "./components/Menu1_1.vue";
 // import Menu1_2 from "./components/Menu1_2.vue";
 // import Menu2_1 from "./components/Menu2_1.vue";
@@ -33,6 +30,9 @@ const routes = [
   { path: "/about", component: About },
   { path: "/form-input", component: FormInputPage },
   { path: "/alert", component: AlertPageVue },
+  { path: "/breadcrumb", component: BreadCrumbPageVue },
+  { path: "/button", component: ButtonPageVue },
+  { path: "/link", component: LinkPageVue },
   { path: "/test-page", component: TestPageVue },
 
   // { path: "/menu1.1", component: Menu1_1 },

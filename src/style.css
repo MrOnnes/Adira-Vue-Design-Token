@@ -1,3 +1,4 @@
 @tailwind base;
 @tailwind components;
+@import url(https://cdn.jsdelivr.net/gh/MrOnnes/adira-design-token@latest/tokens/src/styles.min.css);
 @tailwind utilities;
