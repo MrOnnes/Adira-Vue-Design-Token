@@ -1,5 +1,16 @@
 [![npm version](https://badge.fury.io/js/adira-design-system.svg)](https://badge.fury.io/js/adira-design-system)
 
+# Install
+
+`npm i adira-design-system`
+
+# Usage
+
+on main.js
+
+`import  AdiraDesignSystem  from  "adira-design-system";`
+`Vue.use(AdiraDesignSystem);`
+
 # MIT License
 
 Copyright (c) 2023

@@ -152,7 +152,26 @@ export default {
   },
 };
 </script>
-<style>
+<!-- <style>
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--figma-size-button-padding-top-bottom)
+    var(--figma-size-button-padding-right-left);
+  gap: var(--figma-size-button-gap);
+  border-radius: var(--figma-size-button-radius);
+  border: none;
+
+  font-family: var(--figma-font-button1-font-family);
+  font-style: normal;
+  font-weight: var(--figma-font-button1-font-weight);
+  font-size: var(--figma-size-font-button-1);
+  line-height: var(--figma-size-line-height-button1);
+}
+</style> -->
+<!-- <style>
 .bd-example {
   display: flex;
   width: inherit;
@@ -308,4 +327,4 @@ a.disabled {
   display: block;
   width: 100%;
 }
-</style>
+</style> -->

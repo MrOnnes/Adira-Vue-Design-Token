@@ -1,10 +1,11 @@
 import Vue from "vue";
 import App from "./App.vue";
-import "./style.css";
+// import "./style.css";
 import VueRouter from "vue-router";
 import Prism from "prismjs";
 import vuePlugin from "@highlightjs/vue-plugin";
 import AdiraDesignSystem from ".";
+// import "https://cdn.jsdelivr.net/gh/MrOnnes/adira-design-token@latest/tokens/src/styles.min.css";
 
 Vue.use(vuePlugin);
 Vue.use(AdiraDesignSystem);

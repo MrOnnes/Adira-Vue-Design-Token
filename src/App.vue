@@ -245,6 +245,7 @@ export default {
 </script>
 
 <style>
+/* @import url("https://cdn.jsdelivr.net/gh/MrOnnes/adira-design-token@latest/tokens/src/styles.css"); */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

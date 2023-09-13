@@ -17,10 +17,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "adira-styles": "https://cdn.jsdelivr.net/gh/MrOnnes/adira-design-token@0.2.3/tokens/src/styles.css",
     "core-js": "^3.8.3",
     "vue": "^2.7.14",
     "vue-router": "^2.8.1"
   },
+  "externalCSS": "https://cdn.jsdelivr.net/gh/MrOnnes/adira-design-token@0.2.3/tokens/src/styles.css",
   "devDependencies": {
     "prismjs": "^1.29.0",
     "highlight.js": "^11.8.0",
