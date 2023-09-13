@@ -1,6 +1,6 @@
 {
   "name": "adira-design-system",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "private": false,
   "main": "dist/tutorvuepackage.common.js",
   "types": "./src/index.d.ts",
